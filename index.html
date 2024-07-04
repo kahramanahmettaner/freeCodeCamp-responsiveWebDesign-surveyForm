@@ -11,73 +11,81 @@
 
     <main>
         <h1 id="title">freeCodeCamp Survey Form</h1>
-        <p id="description">This page built by Ahmet Taner Kahraman</p>
+        <p id="description">
+            <i>This page is built for Responsive Web Design Certification</i>
+        </p>
         <form
             id="survey-form"
         >
             <!-- Name -->
-            <label
-                id="name-label" 
-                for="name"
-            >
-            Name
-            </label>
-            <input 
-                required
-                id="name"
-                type="text"
-                placeholder="Enter your name"
-            >
+            <div class="form-element">
+                <label
+                    id="name-label" 
+                    for="name"
+                >
+                Name
+                </label>
+                <input 
+                    required
+                    id="name"
+                    type="text"
+                    placeholder="Enter your name"
+                >
+            </div>
             
             <!-- Email -->
-            <label 
-                id="email-label"
-                for="email"
-            >
-            Email
-            </label>
-            <input 
-                required
-                id="email"
-                type="email"
-                placeholder="Enter your email"
-            >
-            
+            <div class="form-element">
+                <label 
+                    id="email-label"
+                    for="email"
+                >
+                Email
+                </label>
+                <input 
+                    required
+                    id="email"
+                    type="email"
+                    placeholder="Enter your email"
+                >
+            </div>
+
             <!-- Age -->
-            <label 
-                id="number-label"
-                for="number"
-            >
-            Age (optional)
-            </label>
-            <input 
-                id="number"
-                type="number"
-                min="0"
-                max="200"
-                placeholder="Age"
-            >
+            <div class="form-element">
+                <label 
+                    id="number-label"
+                    for="number"
+                >
+                Age (optional)
+                </label>
+                <input 
+                    id="number"
+                    type="number"
+                    min="0"
+                    max="200"
+                    placeholder="Age"
+                >
+            </div>
             
             <!-- Dropdown -->
-            <label for="dropdown"></label>
-            <select
-                name="currentRole"
-                id="dropdown"
-            >
-                <option selected="true" disabled="disabled">Select current role</option>
-                <option value="Student">Student</option>
-                <option value="Full Time Job">Full Time Job</option>
-            </select> 
+            <div class="form-element">
+                <label for="dropdown">Which option best describes your current role?</label>
+                <select
+                    name="currentRole"
+                    id="dropdown"
+                >
+                    <option selected="true" disabled="disabled">Select current role</option>
+                    <option value="Student">Student</option>
+                    <option value="Full Time Job">Full Time Job</option>
+                </select> 
+            </div>
 
             <!-- Radioboxes -->
-            <fieldset>
+            <fieldset class="form-element">
                 <legend>Would you recommend freeCodeCamp to a friend?</legend>
                 <label 
                     id="label-radiobox-definitely"
                     for="radiobox-definitely"
                 >
-                Definitely
-                </label>
                 <input
                     checked
                     id="radiobox-definitely"
@@ -85,101 +93,112 @@
                     name="recommend"
                     value="Definitely"
                 >
+                Definitely
+                </label>
                 <label 
                     id="label-radiobox-maybe"
                     for="radiobox-maybe"
                 >
-                Maybe
-                </label>
                 <input
                     id="radiobox-maybe"
                     type="radio"
                     name="recommend"
                     value="Maybe"
                 >
+                Maybe
+                </label>
+
                 <label 
                     id="label-radiobox-notsure"
                     for="radiobox-notsure"
-                >
-                Not Sure
-                </label>
+                >                
                 <input
                     id="radiobox-notsure"
                     type="radio"
                     name="recommend"
                     value="Not Sure"
                 >
+                Not Sure
+                </label>
             </fieldset>
 
             <!-- Dropdown2 -->
-            <label for="dropdown-feature"></label>
-            <select
-                name="favoriteFeature"
-                id="dropdown-feature"
-            >
-                <option selected="true" disabled="disabled">Select current role</option>
-                <option value="Challenges">Challenges</option>
-                <option value="Projects">Projects</option>
-            </select> 
+            <div class="form-element">
+                <label for="dropdown-feature">What is your favorite feature of freeCodeCamp?</label>
+                <select
+                    name="favoriteFeature"
+                    id="dropdown-feature"
+                >
+                    <option selected="true" disabled="disabled">Select current role</option>
+                    <option value="Challenges">Challenges</option>
+                    <option value="Projects">Projects</option>
+                </select> 
+            </div>
 
             <!-- Checkboxes -->
-            <fieldset>
+            <fieldset class="form-element">
                 <legend>What would you like to see improved? (Check all that apply)</legend>
                 <label 
                     id="label-checkbox-frontendprojects"
                     for="checkbox-frontendprojects"
                 >
-                Front-end Projects
-                </label>
                 <input
                     id="checkbox-frontendprojects"
                     type="checkbox"
                     name="improvements[]"
                     value="Front-end Projects"
                 >
+                Front-end Projects
+                </label>
+
                 <label 
                     id="label-checkbox-backendprojects"
                     for="checkbox-backendprojects"
-                >
-                Back-end Projects
-                </label>
+                >                
                 <input
                     id="checkbox-backendprojects"
                     type="checkbox"
                     name="improvements[]"
                     value="Back-end Projects"
                 >
+                Back-end Projects
+                </label>
+
                 <label 
                     id="label-checkbox-datavisualization"
                     for="checkbox-datavisualization"
                 >
-                Data Visualization
-                </label>
                 <input
                     id="checkbox-datavisualization"
                     type="checkbox"
                     name="improvements[]"
                     value="Data Visualization"
                 >
+                Data Visualization
+                </label>
+
                 <!-- ..... -->
                 <!-- Other chekcboxes can also be added here in similar way -->
             </fieldset>
 
             <!-- Textarea -->
-            <label 
-                id="label-textarea-comments"
-                for="textarea-comments"
-            >
-                Any comments or suggestions?
-            </label>
-            <textarea 
-                id="textarea-comments" 
-                name="comments" 
-                placeholder="Enter your comment here..."
-            ></textarea>
+            <div class="form-element">
+                <label 
+                    id="label-textarea-comments"
+                    for="textarea-comments"
+                >
+                    Any comments or suggestions?
+                </label>
+                <textarea 
+                    id="textarea-comments" 
+                    name="comments" 
+                    placeholder="Enter your comment here..."
+                ></textarea>
+            </div>
 
             <!-- Submit button -->
             <button
+                class="form-element"
                 id="submit"
                 type="submit"
             >
@@ -192,12 +211,22 @@
 
     <footer>
         <p>
-            No Copyright - 
+            No Copyright - Built by 
             <a 
                 href="https://github.com/kahramanahmettaner"
                 target="_blank"
             > Ahmet Taner Kahraman </a>
         </p>
+        <a 
+            class="icon-link icon-link-hover" 
+            style="--bs-link-hover-color-rgb: 25, 135, 84;" 
+            href="https://github.com/kahramanahmettaner"
+            target="_blank"
+        >
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"/>
+            </svg>
+        </a>
     </footer>
     
 </body>
